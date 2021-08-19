@@ -3,6 +3,7 @@ import { Header } from 'components/Header'
 import { MenuAside } from 'components/MenuAside'
 
 import * as S from 'styles/pages/home'
+import { ImagesDashSection } from 'components/ImagesImunizationSection'
 
 export default function Home() {
   return (
@@ -16,7 +17,9 @@ export default function Home() {
         title="Pontos de Vacinação"
         subtitle="Encontre pontos de vacinação próximos a você."
       />
-      <S.Content className="content"></S.Content>
+      <S.Content className="content">
+        <ImagesDashSection />
+      </S.Content>
     </S.Container>
   )
 }

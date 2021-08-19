@@ -10,6 +10,7 @@ import { format } from 'date-fns-tz'
 import ptBR from 'date-fns/locale/pt-BR'
 import { AgeGroupSection } from 'components/AgeGroupSection'
 import { CasesBySexSection } from 'components/CasesBySexSection'
+import { ImagesDashSection } from 'components/ImagesDashSection'
 
 interface HomeProps {
   amountDeath: number
@@ -48,25 +49,38 @@ export default function Home(props: HomeProps) {
       <S.Content className="content">
         <S.Title>Dados Gerais</S.Title>
         <S.BoxContainer>
-          <S.Box>
-            <p>Casos Confirmados</p>
+          <div>
+            <S.Box>
+              <p>Casos Confirmados</p>
 
-            <span>{props.amountCases}</span>
-          </S.Box>
-          <S.Box>
-            <p>Total de mortes</p>
+              <span>{props.amountCases}</span>
+            </S.Box>
+            <S.Box>
+              <p>Total de mortes</p>
 
-            <span>{props.amountDeath}</span>
-          </S.Box>
-          <S.Box>
-            <p>Casos descartados</p>
+              <span>{props.amountDeath}</span>
+            </S.Box>
+            <S.Box>
+              <p>Casos descartados</p>
 
-            <span>{props.discardedCases}</span>
-          </S.Box>
+              <span>{props.discardedCases}</span>
+            </S.Box>
+            <S.Box>
+              <p>Total de testes realizados</p>
+
+              <span>821649</span>
+            </S.Box>
+            <S.Box>
+              <p>Taxa de mortalidade</p>
+
+              <span> 3%</span>
+            </S.Box>
+          </div>
         </S.BoxContainer>
 
         <CasesGraphicSection data={props.data} />
         <AgeGroupSection data={props.ageGroupData} />
+        <ImagesDashSection />
         {/* <CasesBySexSection data={props.casesBySexData} /> */}
       </S.Content>
     </S.Container>

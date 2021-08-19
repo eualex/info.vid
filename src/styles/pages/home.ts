@@ -41,39 +41,51 @@ export const Title = styled.h2`
 export const BoxContainer = styled.div`
   width: 100%;
 
-  display: flex;
+  > div {
+    display: flex;
+    padding: 1.5rem 0;
 
-  > div + div {
-    margin-left: 1.5rem;
-  }
+    overflow-x: auto;
 
-  div:nth-child(1) {
-    background-color: var(--yellow-300);
-
-    p {
-      color: #555;
+    > div + div {
+      margin-left: 1.5rem;
     }
 
-    span {
-      color: var(--gray-800);
+    div:nth-child(1) {
+      background-color: var(--yellow-300);
+
+      p {
+        color: #555;
+      }
+
+      span {
+        color: var(--gray-800);
+      }
     }
-  }
 
-  div:nth-child(3) {
-    background-color: var(--green-400);
+    div:nth-child(3) {
+      background-color: var(--green-400);
 
-    p {
-      color: #555;
+      p {
+        color: #555;
+      }
+
+      span {
+        color: var(--gray-800);
+      }
     }
 
-    span {
-      color: var(--gray-800);
+    div:nth-child(4) {
+      background-color: #19647e;
+    }
+    div:nth-child(5) {
+      background-color: var(--gray-800);
     }
   }
 `
 
 export const Box = styled.div`
-  width: 300px;
+  min-width: 300px;
   height: 150px;
 
   border-radius: 15px;
