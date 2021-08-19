@@ -73,7 +73,7 @@ export default function Home(props: HomeProps) {
             <S.Box>
               <p>Taxa de mortalidade</p>
 
-              <span> 3%</span>
+              <span>3%</span>
             </S.Box>
           </div>
         </S.BoxContainer>

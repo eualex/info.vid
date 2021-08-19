@@ -14,6 +14,10 @@ export function ImagesDashSection() {
           <img src="/deaths.jpeg" alt="obtos por sexo" />
         </div>
       </S.ContainerCaseSex>
+      <div className="special__case">
+        <h1>Casos e óbitos por faixa etária</h1>
+        <img src="/mortesFE.jpeg" alt="Casos por sexo" />
+      </div>
     </S.Container>
   )
 }
