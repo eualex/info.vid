@@ -14,8 +14,8 @@ export default function Home() {
       <MenuAside className="sidebar" />
       <Header
         className="header"
-        title="Pontos de Vacinação"
-        subtitle="Encontre pontos de vacinação próximos a você."
+        title="Vacinação"
+        subtitle="Veja os dados disponíveis para sua região."
       />
       <S.Content className="content">
         <ImagesDashSection />
